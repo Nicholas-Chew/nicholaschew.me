@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "nicholaschew-me",
+  "main": "./src/index.js",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [
+    {
+      "pattern": "www.nicholaschew.me",
+      "custom_domain": true
+    },
+    {
+      "pattern": "nicholaschew.me",
+      "custom_domain": true
+    }
+  ]
+}
